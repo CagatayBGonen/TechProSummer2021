@@ -12,7 +12,7 @@ public class C11_Exceptions11 {
 			System.out.println("hatali index girdiniz");			
 		}
 		finally { 
-			System.out.println("devam. Code devam etmiþtir.");
+			System.out.println("devam. Code devam etmiï¿½tir.");
 		}
 		/*
 		 * Finally block try-catch blogu ile kullanilir.
