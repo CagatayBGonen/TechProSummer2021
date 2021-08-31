@@ -1,0 +1,11 @@
+
+1) Abs Banka create ediniz.
+fields: double bakiye;
+p'li const create ediniz.
+p'siz const --> print: Hesap hareketleri...
+p'li paraYatir ve p'li paraCek abs method create ediniz.
+
+2) Banka class'in sub class'i BenimHesabim class create ediniz.
+p'li bakiye print eden const create ediniz.
+
+3) HesapHareketlerim classinda obj ile islemler yapip yazdiriniz.
