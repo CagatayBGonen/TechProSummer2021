@@ -2,6 +2,7 @@ package Lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class C01 {
@@ -23,6 +24,8 @@ public class C01 {
         uniqueFunct(l);
         System.out.println("");
         ciftNumSquareSum(l);
+        System.out.println("");
+        reverseFunct(l);
     }
 
     // structural
@@ -70,6 +73,13 @@ public class C01 {
     // 5) Listedeki tekrarli elamanlari silip cift olanlarin karelerinin toplamini yazdiran method olustur.
     public static void ciftNumSquareSum(List<Integer> l) {
         System.out.println(l.stream().distinct().filter(t -> t % 2 != 0).map(t -> t * t).reduce(0, (x, y) -> x + y));
+    }
+
+    // 6)Listedeki elemanları sıralayarak ve ters sıralayarak yazdır.
+    public static void reverseFunct(List<Integer> l){
+        l.stream().sorted().forEach(t-> System.out.print(t+" "));
+        System.out.println("");
+        l.stream().sorted(Comparator.reverseOrder()).forEach(t-> System.out.print(t+" "));
     }
 
 }
