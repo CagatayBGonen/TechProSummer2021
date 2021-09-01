@@ -23,9 +23,9 @@ public class C02 {
         method04(l);
         System.out.println("");
         method05(l);
-        System.out.println("");
         method06(l);
-
+        method07(l);
+        method08(l);
     }
     // 1) List in elamanlarini aralarinda bosluk birakarak yan yana yazdir.(Method reference - kendi methodmuz)
     public static void elemanyazdir(List<Integer> l){
@@ -55,5 +55,13 @@ public class C02 {
     //7)List teki farklı ve 5 ten büyük ve cift elemanlarının yarısını alıp ters sıralayarak list olarak yazdır.(Use Method reference)
     public static void method06(List<Integer> l){
         System.out.println(l.stream().distinct().filter(t -> t > 5 && t % 2 == 0).map(t -> t / 2).sorted(Comparator.reverseOrder()).collect(Collectors.toList()));
+    }
+    //8) List teki en büyük elemanı bul.(Use Method Reference)
+    public static void method07(List<Integer> l){
+        System.out.println(l.stream().reduce(Integer.MIN_VALUE, Math::max));
+    }
+    //9) List teki en kucuk elemani bul.
+    public static void method08(List<Integer> l){
+        System.out.println(l.stream().reduce(Integer.MAX_VALUE, Math::min));
     }
 }

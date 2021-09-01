@@ -11,6 +11,8 @@ public class C03 {
         method01(l);
         System.out.println("");
         method02(l);
+        System.out.println("");
+        method03(l);
     }
 
     // 1) Kucukten buyuge sirala, sonra ilk dort elemani yazdir.
@@ -20,6 +22,10 @@ public class C03 {
     // 2) kucukten buyuge sirala, sonra ilk dort elemani atla.
     public static void method02(List<Integer> l){
         System.out.println(l.stream().sorted().skip(4).collect(Collectors.toList()));
+    }
+    // 3) Kucukten buyuge sirali 4., 5. ve 6. elamani yazdir.
+    public static void method03(List<Integer> l){
+        System.out.println(l.stream().sorted().skip(3).limit(3).collect(Collectors.toList()));
     }
 
 }
