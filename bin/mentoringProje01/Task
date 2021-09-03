@@ -1,0 +1,6 @@
+1 - OgrenciOlusturma adinda bir class olusturun Ogrencinin numarasi, adi, soyadi
+ve ortalamasi degiskenlerini private access modifier kullanarak olusturun
+getter ve setter methodlari olusturun default constructor ve tum degiskenleri
+iceren parametleri constructor olusturun
+2 - OgrenciIsleri adinda bir class olusturun Ogrenci kayit, ogrenci goruntuleme,
+ogrenci silme ve cikis methodlari olusturun bu methodlari switch case ile cagirin/
